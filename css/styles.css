@@ -1,7 +1,7 @@
 :root {
   --main-title-color: #ffffff;
-  --primary-logo-color: #2e2f42;
   --primary-brand-color: #4d5ae5;
+  --dark-logo-color: #2e2f42;
   --section-title-color: #2e2f42;
   --subtitle-color: #2e2f42;
   --menu-primary-color: #2e2f42;
@@ -20,7 +20,7 @@
   --portfolio-btn-background: #f4f4fd;
   --portfolio-btn-hover: #ffffff;
   --portfolio-btn-background-hover: #404bbf;
-  --team-background: #f4f4fd;
+  --team-background: #ffffff;
 }
 
 body {
@@ -43,15 +43,18 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.16; /* 21/18 */
-  align-items: center;
+  line-height: 1.17; /* 21/18 */
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-logo-color);
+  color: var(--primary-brand-color);
 }
 
-.logo-blue {
-  color: var(--primary-brand-color);
+.logo-dark {
+  color: var(--dark-logo-color);
+}
+
+.logo-light {
+  color: var(--footer-text-color);
 }
 
 .header-menu-link {
@@ -68,6 +71,10 @@ body {
   text-decoration: underline;
 }
 
+.address {
+  font-style: normal;
+}
+
 .address-link {
   font-weight: 400;
   font-size: 16px;
@@ -77,7 +84,7 @@ body {
 }
 
 .address-link:hover,
-.adress-link:focus {
+.address-link:focus {
   color: var(--address-hover-color);
 }
 
@@ -99,7 +106,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5; /* 24/16 */
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--hero-btn-color);
   background-color: var(--hero-btn-background-color);
@@ -112,6 +118,15 @@ body {
 }
 
 /* -------------------LIST------------------- */
+.section-title {
+  font-size: 36px;
+  line-height: 1.11; /* 40/36 */
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--section-title-color);
+}
+
 .list-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -144,10 +159,6 @@ body {
   background-color: var(--second-background-color);
 }
 
-.logo.logo-footer {
-  color: var(--footer-text-color);
-}
-
 .list-text.footer-text {
   color: var(--footer-text-color);
 }
@@ -160,6 +171,7 @@ body {
   line-height: 1.5; /* 24/16 */
   text-align: center;
   letter-spacing: 0.04em;
+  cursor: pointer;
   color: var(--portfolio-btn-color);
   background-color: var(--portfolio-btn-background);
 }
