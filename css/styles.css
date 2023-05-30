@@ -20,7 +20,7 @@
   --portfolio-btn-background: #f4f4fd;
   --portfolio-btn-hover: #ffffff;
   --portfolio-btn-background-hover: #404bbf;
-  --team-background: #ffffff;
+  --team-background: #f4f4fd;
 }
 
 body {
@@ -144,6 +144,10 @@ body {
 /* -------------------OUR TEAM------------------- */
 .team {
   background-color: var(--team-background);
+}
+
+.team-item {
+  background-color: var(--main-background-color);
 }
 
 .list-subtitle.team-subtitle {
